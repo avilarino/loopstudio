@@ -76,7 +76,7 @@ nav {
   color: #ffffff;
   font-size: 80px;
   font-family:'Josefin Sans', sans-serif;
-  font-weight:300;
+  font-weight:200;
   text-align: center;
   margin: 0 auto;
 }
@@ -304,4 +304,30 @@ margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 660px) {
+  .nav-title h1 {
+    font-size: 40px;
+  
+  }
+
+  .section-two-text h1 {
+    font-size: 40px;
+  }
+
+  
+.section-two-text p {
+  font-size: 20px
+}
+
+.section-three-text h1 {
+  font-size: 40px;
+}
+
+.section-three-photo .section-three-photo-title h1 {
+  font-size: 20px;
+}
+
 }
