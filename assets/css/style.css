@@ -73,10 +73,11 @@ nav {
 }
 
 .section-one-text h1 {
-  color: grey;
-  border: 1px solid grey;
+  color: white;
+  border: 2px solid white;
   font-size: 40px;
   text-align: center;
+  font-weight: lighter;
   font-family:'Josefin Sans', sans-serif;
 }
 
@@ -107,7 +108,7 @@ header {
 }
 
 .section-one-text {
-  max-width: 57%;
+  max-width: 45%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -116,8 +117,10 @@ header {
 }
 
 .section-one-text h1 {
-  font-size: 55px;
+  font-size: 40px;
   font-weight: lighter;
+  text-align: start;
+  color: white
 }
 
 nav {
@@ -131,6 +134,49 @@ nav {
 
 }
 
+
+
+}
+
+@media only screen and (min-width: 905px) {
+
+  .section-one-text {
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .section-one-text h1 {
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: start;
+    color: white
+  }
+
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+
+  .section-one-text {
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .section-one-text h1 {
+    font-size: 70px;
+    font-weight: lighter;
+    text-align: start;
+    color: white
+  }
 
 
 }
