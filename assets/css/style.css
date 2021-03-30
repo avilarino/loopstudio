@@ -6,45 +6,24 @@
 
 body {
   max-height: 100%;
+  margin: 0 auto
 }
 
 html {
   max-height: 100%;
 }
 
+.container {
+  padding: 5px 10px 5px 10px
+}
 
 /*-------------------------------SECTION-ONE-------------------------------------------*/
-
-.container {
-  padding: 0 30px 0 30px
-}
 
 section {
   position: relative;
   width: 100%;
   height: 100vh;
   margin-bottom: 70px;
-}
-
-.image-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.image-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%
-}
-
-header {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .container-logo img {
@@ -57,6 +36,25 @@ header {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.image-container {
+  position: absolute;
+  width: 100%;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 nav {
@@ -82,30 +80,43 @@ nav {
   font-family:'Josefin Sans', sans-serif;
 }
 
-/*---------------------------------SECTION-TWO------------------------------------------------*/
 
+@media only screen and (min-width: 700px) {
 
-
-.div-image {
-  margin: 0 auto
+.container {
+  padding: 30px 40px 30px 40px
+  
 }
 
-.div-image img {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
+.container-hamburguer img {
+  display: none;
 }
 
-.two-text {
-  text-align: center;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.two-text h2 {
+.section-one-text {
+  max-width: 50%;
+}
+
+.section-one-text h1 {
+  font-size: 40px
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 10px;
   font-family:'Josefin Sans', sans-serif;
-  font-size: 40px;
+  width: 40%
+
 }
 
-.two-text p {
-  font-family:'Josefin Sans', sans-serif;
-  font-size: 25px;
+
+
 }
