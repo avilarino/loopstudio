@@ -14,7 +14,7 @@ html {
 }
 
 .container {
-  padding: 5px 10px 5px 10px
+  padding: 10px 15px 10px 15px
 }
 
 /*-------------------------------SECTION-ONE-------------------------------------------*/
@@ -72,9 +72,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
   height: 100%;
-  padding: 0 30px 0 30px
 }
 
 .section-one-text h1 {
@@ -84,6 +82,32 @@ nav {
   text-align: center;
   font-weight: lighter;
   font-family:'Josefin Sans', sans-serif;
+}
+
+/*-----------------------------SECTION-TWO--------------------------------------------*/
+
+.image-container-two-desktop {
+  display: none;
+}
+
+.image-container-two img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container-two h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 55px;
+}
+
+.text-container-two p {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 27px;
+  margin: auto 0;
 }
 
 
