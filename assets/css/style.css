@@ -83,6 +83,14 @@ nav {
 
 @media only screen and (min-width: 700px) {
 
+
+.image-container {
+  object-fit: contain;
+  width: 100%;
+  height:100%
+}
+
+
 .container {
   padding: 30px 40px 30px 40px
   
@@ -99,11 +107,17 @@ header {
 }
 
 .section-one-text {
-  max-width: 50%;
+  max-width: 57%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .section-one-text h1 {
-  font-size: 40px
+  font-size: 55px;
+  font-weight: lighter;
 }
 
 nav {
