@@ -76,7 +76,7 @@ nav {
 }
 
 .section-one-text h1 {
-  color: white;
+  color:  hsl(0, 0%, 100%);
   border: 2px solid white;
   font-size: 40px;
   text-align: center;
@@ -100,14 +100,16 @@ nav {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   text-align: center;
-  font-size: 55px;
+  font-size: 35px;
+  color: #696969;
 }
 
 .text-container-two p {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  font-size: 27px;
+  font-size: 20px;
   margin: auto 0;
+  color: #696969;
 }
 
 
@@ -160,12 +162,12 @@ header {
   font-size: 40px;
   font-weight: lighter;
   text-align: start;
-  color: white
+  color:  hsl(0, 0%, 100%)
 }
 
 nav {
   display: block;
-  color: white;
+  color:  hsl(0, 0%, 100%);
   font-size: 12px;
   font-family:'Josefin Sans', sans-serif;
 }
@@ -174,7 +176,58 @@ nav a {
   margin-left: 15px;
 }
 
+/*--------------------------MEDIA QUERIE - SECTION - TWO --------------------------*/
+
+.image-container-two {
+    display: none;
+  }
+
+  .image-container-two-desktop {
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+
+  .image-container-two-desktop img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .container.second {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .text-container-two {
+    position: relative;
+    z-index: 1;
+    right: 150px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .text-container-two h2 {
+    font-size: 20px;
+    text-align: start;
+    font-weight: lighter;
+    }
+
+  .text-container-two p {
+    text-align: start;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+
+
+
 }
+
 
 @media only screen and (min-width: 905px) {
 
@@ -192,6 +245,33 @@ nav a {
     font-weight: lighter;
     text-align: start;
     color: white
+  }
+
+  /*--------------------------MEDIA QUERIE - SECTION - TWO --------------------------*/
+
+  .text-container-two {
+    position: relative;
+    z-index: 1;
+    right: 150px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .text-container-two h2 {
+    font-size: 30px;
+    text-align: start;
+    font-weight: lighter;
+    }
+
+  .text-container-two p {
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
   }
 
 }
@@ -220,4 +300,42 @@ nav a {
     width: 100%;
     height: 100%
   }
-}
+
+  .text-container-two h2 {
+    font-size: 30px;
+  }
+
+  .text-container-two p {
+    font-size: 15px;
+  }
+
+  
+  /*--------------------------MEDIA QUERIE - SECTION - TWO --------------------------*/
+
+  .text-container-two {
+    position: relative;
+    z-index: 1;
+    right: 150px;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+
+  .text-container-two h2 {
+    font-size: 40px;
+    text-align: start;
+    font-weight: lighter;
+    }
+
+  .text-container-two p {
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  
+ 
