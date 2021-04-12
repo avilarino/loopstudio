@@ -1,8 +1,10 @@
 
 @font-face {
-    font-family:'Josefin Sans', sans-serif;
-    src: url(../statics/JosefinSans-Italic-VariableFont_wght.ttf)
-  }
+    font-family:'Josefin Sans';
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
 
 body {
   max-height: 100%;
@@ -49,7 +51,6 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
-  
 }
 
 .image-container img {
@@ -70,6 +71,11 @@ nav {
   display: none;
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
 .section-one-text {
   position: absolute;
   z-index: 1;
@@ -80,11 +86,11 @@ nav {
 }
 
 .section-one-text h1 {
-  color:  hsl(0, 0%, 100%);
+  color:  #ffffff;
   border: 2px solid white;
   font-size: 40px;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 100;
   font-family:'Josefin Sans', sans-serif;
 }
 
@@ -127,6 +133,8 @@ nav {
 
 .final-button-three-one a {
   display: none;
+  text-decoration: none;
+  color: #000000
 }
 
 .section-three-title {
@@ -155,10 +163,11 @@ nav {
   max-width: 200px;
   position: relative;
   bottom: 90px;
+  left: 30px
 }
 
 .title-three h2 {
-  color: white;
+  color: #ffffff;
   font-family:'Josefin Sans', sans-serif;
   font-weight: lighter;
 }
@@ -179,12 +188,14 @@ nav {
   padding: 7px 14px 7px 14px;
   font-family:'Josefin Sans', sans-serif;
   margin-bottom: 70px;
+  text-decoration: none;
+  color: #000000;
 }
 
 /*-------------------------------FOOTER-----------------------------------------------------------------*/
 
 footer {
-  background: black;
+  background: #000000;
   padding: 85px 0 85px 0;
   width: 100%;
   height: 100%;
@@ -219,7 +230,8 @@ footer {
 }
 
 .footer-list a {
-  color: white;
+  color: #ffffff;
+  text-decoration: none;
   text-align: center;
   margin-bottom: 20px
 }
@@ -228,7 +240,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .footer-media img {
@@ -237,12 +248,10 @@ footer {
 }
 
 .copyright p {
-  color: grey;
+  color: #808080;
   text-align: center;
+  font-family:'Josefin Sans', sans-serif;
 }
-
-
-
 
 /*----------------------------------MEDIA-QUERIE----------------------------------------------*/
 
@@ -293,12 +302,12 @@ header {
   font-size: 40px;
   font-weight: lighter;
   text-align: start;
-  color:  hsl(0, 0%, 100%)
+  color:  #ffffff
 }
 
 nav {
   display: block;
-  color:  hsl(0, 0%, 100%);
+  color:  #ffffff;
   font-size: 12px;
   font-family:'Josefin Sans', sans-serif;
 }
@@ -338,7 +347,7 @@ nav a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: white;
+    background: #ffffff;
     padding-left: 15px;
     padding-top: 15px;
   }
@@ -366,7 +375,7 @@ nav a {
   .final-button-three-one a {
     display: block;
     align-content: center;
-    border: 2px solid black;
+    border: 2px solid #000000;
     padding: 7px 20px 7px 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -395,12 +404,178 @@ nav a {
 
   .section-three-title h2 {
     font-family: 80px;
-    color: black;
+    color: #000000;
     margin-bottom: 0;
   }
 
   .title-three h2 {
-    color: white
+    color: #ffffff
+  }
+
+  .principal-container-image-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .image-container-three {
+    width: 23%;
+    max-height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-container-three-desktop {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-container-three-desktop img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*----------------------------RESPONSIVE -----MEDIA QUERIE - FOOTER-----------------------------------------------------*/
+
+  footer {
+    padding: 0
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 160px 49px 160px
+  }
+
+  .footer-desktop-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-desktop-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-list a {
+    margin-right: 35px;
+  }
+
+  .footer-media img {
+    width: 20px
+  }
+
+}
+
+@media only screen and (min-width: 905px) {
+
+  .section-one-text {
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .section-one-text h1 {
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: start;
+    color: #ffffff
+  }
+
+  /*--------------------------MEDIA QUERIE - SECTION - TWO --------------------------*/
+
+  .text-container-two {
+    position: relative;
+    z-index: 1;
+    right: 150px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #ffffff;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .text-container-two h2 {
+    font-size: 30px;
+    text-align: start;
+    font-weight: lighter;
+    }
+
+  .text-container-two p {
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  /*---------------------------RESPONSIVE -----MEDIA-QUERIE-SECTION-THREE- !!!!!!!!!!!!---------------------------------------*/
+
+  .final-button-three-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .final-button-three-one a {
+    display: block;
+    align-content: center;
+    border: 2px solid #000000;
+    padding: 7px 20px 7px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family:'Josefin Sans', sans-serif;
+  }
+
+  .final-button-three-two a {
+    display: none;
+  }
+
+  .image-three img {
+    display: none;
+  }
+
+  .titles-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-three-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-three-title h2 {
+    font-family: 80px;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  .title-three h2 {
+    color: #ffffff
   }
 
   .principal-container-image-three {
@@ -429,109 +604,9 @@ nav a {
     object-fit: cover;
   }
 
-  /*----------------------------RESPONSIVE -----MEDIA QUERIE - FOOTER-----------------------------------------------------*/
-
-  footer {
-    max-width: 100%;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-desktop-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 50px;
-  }
-
-  .footer-desktop-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 50px;
-  }
-
-  .footer-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0
-  }
-
-  .footer-logo img {
-    width: 120px;
-  }
-
-  .footer-list a {
-    margin-right: 20px;
-  }
-
-  .footer-logo img {
-  }
-
-  .copyright p {
-
-  }
-
-
-}
-
-
-@media only screen and (min-width: 905px) {
-
-  .section-one-text {
-    max-width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .section-one-text h1 {
-    font-size: 60px;
-    font-weight: lighter;
-    text-align: start;
-    color: white
-  }
-
-  /*--------------------------MEDIA QUERIE - SECTION - TWO --------------------------*/
-
-  .text-container-two {
-    position: relative;
-    z-index: 1;
-    right: 150px;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: white;
-    padding-left: 30px;
-    padding-top: 30px;
-  }
-
-  .text-container-two h2 {
-    font-size: 30px;
-    text-align: start;
-    font-weight: lighter;
-    }
-
-  .text-container-two p {
-    text-align: start;
-    font-size: 15px;
-    font-weight: lighter;
-  }
-
 }
 
 @media only screen and (min-width: 1100px) {
-
  
   .section-one-text {
     max-width: 50%;
@@ -546,7 +621,7 @@ nav a {
     font-size: 70px;
     font-weight: lighter;
     text-align: start;
-    color: white
+    color: #ffffff
   }
 
   .image-container img {
@@ -562,7 +637,6 @@ nav a {
   .text-container-two p {
     font-size: 15px;
   }
-
   
   /*--------------------------MEDIA QUERIE - SECTION - TWO --------------------------*/
 
@@ -574,7 +648,7 @@ nav a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: white;
+    background: #ffffff;
     padding-left: 100px;
     padding-top: 100px;
   }
