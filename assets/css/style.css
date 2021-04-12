@@ -76,6 +76,7 @@ nav a {
   color: white;
 }
 
+/*preguntas en section one text !!!!!!!*/
 .section-one-text {
   position: absolute;
   z-index: 1;
@@ -92,6 +93,7 @@ nav a {
   text-align: center;
   font-weight: 100;
   font-family:'Josefin Sans', sans-serif;
+  padding: 20px 10px 20px 10px
 }
 
 /*-----------------------------SECTION-TWO--------------------------------------------*/
@@ -141,7 +143,6 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .section-three-title h2 {
@@ -160,7 +161,7 @@ nav a {
 }
 
 .title-three {
-  max-width: 200px;
+  max-width: 180px;
   position: relative;
   bottom: 90px;
   left: 30px
@@ -190,6 +191,12 @@ nav a {
   margin-bottom: 70px;
   text-decoration: none;
   color: #000000;
+  font-weight: 300;
+}
+
+.image-container-three {
+  height: 160px;
+  margin-bottom: 50px;
 }
 
 /*-------------------------------FOOTER-----------------------------------------------------------------*/
