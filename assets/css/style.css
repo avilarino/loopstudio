@@ -16,122 +16,77 @@ html {
 }
 
 .container {
-  padding: 10px 15px 10px 15px
+  padding: 30px 50px 30px 50px;
 }
-
-.image-container-three-desktop img {
-  display: none;
-}
-
-/*-------------------------------SECTION-ONE-------------------------------------------*/
 
 .section-one {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+  max-height: 100%;
 }
 
-.container-logo img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%
-}
+/*-----------------------SECTION-ONE---------------------------------------------------------*/
 
-.container-hamburguer img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-
-.image-container-desktop {
-  display: none;
-}
-
-.image-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.image-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%
-}
-
-header {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.hero-desktop {
+  display: none
 }
 
 nav {
   display: none;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-/*preguntas en section one text !!!!!!!*/
-.section-one-text {
+.hero-mobile {
   position: absolute;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-
-.section-one-text h1 {
-  color:  #ffffff;
-  border: 2px solid white;
-  font-size: 40px;
-  text-align: center;
-  font-weight: 100;
-  font-family:'Josefin Sans', sans-serif;
-  padding: 20px 10px 20px 10px
-}
-
-/*-----------------------------SECTION-TWO--------------------------------------------*/
-
-.image-container-two-desktop {
-  display: none;
-}
-
-.image-container-two img {
-  object-fit: contain;
+  z-index: -1;
+  object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh
 }
 
-.text-container {
+header {
+  background: black;
+  position: fixed;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.burguer {
+  width: 25px
+}
+
+.text-hero {
+  position: absolute;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid green;
-  height: 100%;
 }
 
-.text-container-two h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 35px;
-  color: #696969;
+.text-hero h1 {
+  color: white;
+  border: 1px solid white;
+  font-family:'Josefin Sans';
+  padding: 10px 15px 10px 15px
 }
 
-.text-container-two p {
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  font-size: 20px;
-  color: #696969;
-}
 
-/*-------------------------SECTION-THREE-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -196,121 +151,6 @@ footer {
   text-align: center;
   font-family:'Josefin Sans', sans-serif;
 }
-
-/*----------------------------------MEDIA-QUERIE----------------------------------------------*/
-
-
-@media only screen and (min-width: 700px) {
-
-  .image-container {
-    display: none;
-  }
-
-  .image-container-desktop {
-    display: block ;
-  }
-
-  .image-container-desktop img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-
-.container {
-  padding: 30px 40px 30px 40px
-  
-}
-
-.container-hamburguer img {
-  display: none;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.section-one-text {
-  max-width: 45%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.section-one-text h1 {
-  font-size: 40px;
-  font-weight: lighter;
-  text-align: start;
-  color:  #ffffff
-}
-
-nav {
-  display: block;
-  color:  #ffffff;
-  font-size: 12px;
-  font-family:'Josefin Sans', sans-serif;
-}
-
-nav a {
-  margin-left: 15px;
-}
-
-  /*----------------------------RESPONSIVE -----MEDIA QUERIE - FOOTER-----------------------------------------------------*/
-
-  footer {
-    padding: 0
-  }
-
-  .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 160px 49px 160px
-  }
-
-  .footer-desktop-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .footer-desktop-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .footer-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0
-  }
-
-  .footer-logo img {
-    width: 120px;
-  }
-
-  .footer-list a {
-    margin-right: 35px;
-  }
-
-  .footer-media img {
-    width: 20px
-  }
-
-}
-
-
-  
-
 
 
   
