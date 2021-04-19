@@ -28,7 +28,16 @@ body {
 }
 
 nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family:'Josefin Sans';
+  margin-bottom: 10px;
 }
 
 .picture-desktop {
@@ -61,6 +70,7 @@ header {
 
 .logo {
   width: 100px;
+  margin-bottom: 20px;
 }
 
 .burguer {
@@ -97,8 +107,6 @@ header {
   opacity: 70%;
   transition: 0.5s;
 }
-
-
 
 .picture-mobile {
   position: absolute;
@@ -154,6 +162,7 @@ header {
   border: 1px solid white;
   transition: 0.4s 
 }
+
 
 
 
@@ -304,6 +313,41 @@ footer {
     display: none;
   }
 
+  .menu {
+    width: 100px;
+  }
+
+  .burguer {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 500px;
+    
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+  }
+
+  nav a:hover {
+    opacity: 70%;
+    transition: 0.4s;
+  }
+
+  .menu-burguer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
 
 }
