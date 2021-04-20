@@ -38,6 +38,13 @@ nav a {
   font-size: 12px;
   font-family:'Josefin Sans';
   margin-bottom: 10px;
+  display: none;
+}
+
+nav a:hover {
+  opacity: 70%;
+  transition: 0.4s;
+  
 }
 
 .picture-desktop {
@@ -124,7 +131,6 @@ header {
  
 }
 
-
 /*---------------------SECTION-THREE-----------------------------*/
 
 .pictures-titles h2 {
@@ -162,16 +168,6 @@ header {
   border: 1px solid white;
   transition: 0.4s 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*-----------------------FOOTER------------------------------------------*/
@@ -325,9 +321,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
     width: 500px;
-    
   }
 
   nav a {
@@ -336,6 +330,7 @@ footer {
     margin-right: 10px;
     font-family: 'Josefin Sans';
     font-size: 12px;
+    display: block;
   }
 
   nav a:hover {
