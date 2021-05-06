@@ -1,24 +1,24 @@
-function sumar (){
+function sumar() {
   const numero1 = parseInt(document.getElementById("dato1").value);
   const numero2 = parseInt(document.getElementById("dato2").value);
   const suma = (numero1 + numero2)
-  console.log (suma)
+  console.log(suma)
 }
 
-function restar (){
+function restar() {
   const numero1 = parseInt(document.getElementById("dato1").value)
-  const numero2 = parseInt (document.getElementById("dato2").value)
+  const numero2 = parseInt(document.getElementById("dato2").value)
   const resta = (numero1 - numero2)
   console.log(resta)
 }
 
-function multiplicar (){
+function multiplicar() {
   const numero1 = parseInt(document.getElementById("dato1").value)
   const numero2 = parseInt(document.getElementById("dato2").value)
   const multipli = (numero1 * numero2);
-  console.log (multipli)
+  console.log(multipli)
 
-  if (multipli > 500){
+  if (multipli > 500) {
     console.log("tienes un beneficio")
   }
   else {
@@ -29,19 +29,33 @@ function multiplicar (){
 
 const socios = ["agustin", "mariano", "joaquin", "jonathan"]
 
-for(let i = 0; i < socios.length; i++){
-  console.log(socios[i]);}
-console.log (socios)
+for (let i = 0; i < socios.length; i++) {
+  console.log(socios[i]);
+}
+console.log(socios)
 
 
 
-function code () {
+function code() {
   const password = parseInt(document.getElementById("nombre1").value)
-  if (password === socios){
+  if (password === socios) {
     console.log("puede entrar")
   }
   else {
     console.log("no puede entrar")
   }
+}
+
+//
+function logIn() {
+  const password = document.getElementById("nombre1").value;
+  const message = document.getElementById("mensaje");
+  if (socios.some(item => item === password)) {
+    message.innerText = 'Ingreso exitoso!';
+  } else {
+    message.innerText = 'Su nombre no existe en la base';
+  }
+
+
 }
 
