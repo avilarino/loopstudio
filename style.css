@@ -1,0 +1,100 @@
+body {
+  margin: 0
+}
+
+.section-hero {
+  height: 100vh;
+}
+
+nav {
+  padding: 20px
+}
+
+.logo-loopstudio {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.size-nav {
+  font-size: 10px
+}
+
+.section-hero {
+  position: relative
+}
+
+.image-hero {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text-hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.text-hero h1 {
+  color: white;
+  border: 1px solid white;
+  font-family:'Josefin Sans';
+  padding: 10px 15px 10px 15px;
+  font-size: 50px;
+}
+
+.box-image {
+  margin-bottom: 50px;
+}
+
+.box-image img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 200px
+}
+
+.box-image h3 {
+  position: absolute;
+  color: white;
+}
+
+.section-creations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  padding: 50px;
+  text-align: center;
+}
+
+
+@media (min-width: 990px) {
+
+.section-creations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box-image {
+  width: 23%;
+  height: 400px;
+}
+
+.box-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+}
